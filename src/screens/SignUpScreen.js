@@ -11,7 +11,9 @@ const SignUpScreen = ({ navigation }) => {
     <View style={styles.container}>
       <Text>SignUpScreen</Text>
       <TextInput style={styles.input} value={mailAddress} onChangeText={(text) => setMailAddress(text)} />
+
       <TextInput style={styles.input} value={password} onChangeText={(text) => setPassword(text)} />
+      
       <Button
         title="新規登録"
         onPress={() => {
